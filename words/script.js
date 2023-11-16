@@ -13,21 +13,20 @@ let startTime;
 let isTimerRunning = false;
 let currentTime = 0;
 
-
 function setup() {
     bg = loadImage('./assets/images/image.webp');
-    font = loadFont('assets/fonts/font.ttf');
+    // font = loadFont('assets/fonts/font.ttf');
     createCanvas(window.innerWidth, window.innerHeight);
     startTime = new Date();
-    textFont(font);
+    // textFont(font);
     textSize(LETTER_SIZE)
-    backgroundMusic = loadSound("./assets/sounds/MUSIC.mp3")
-    play();
+    // backgroundMusic = loadSound("./assets/sounds/MUSIC.mp3")
+    // play();
 }
 
 function mousePressed() {
     if(startMusic) {
-        backgroundMusic.play();
+        // backgroundMusic.play();
         startMusic = false;
     }
 }
@@ -145,7 +144,7 @@ function finish() {
     isTimerRunning = false;
     clearTimeout(timeoutId);
     noLoop();
-    backgroundMusic.stop();
+    // backgroundMusic.stop();
 
 }
 function win() {
