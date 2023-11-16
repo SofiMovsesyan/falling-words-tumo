@@ -15,18 +15,18 @@ let currentTime = 0;
 
 function setup() {
     bg = loadImage('./assets/images/image.webp');
-    // font = loadFont('assets/fonts/font.ttf');
+    font = loadFont('assets/fonts/font.ttf');
     createCanvas(window.innerWidth, window.innerHeight);
     startTime = new Date();
-    // textFont(font);
+
     textSize(LETTER_SIZE)
-    // backgroundMusic = loadSound("./assets/sounds/MUSIC.mp3")
-    // play();
+    backgroundMusic = loadSound("./assets/sounds/MUSIC.mp3")
+    play();
 }
 
 function mousePressed() {
     if(startMusic) {
-        // backgroundMusic.play();
+        backgroundMusic.play();
         startMusic = false;
     }
 }
@@ -34,7 +34,7 @@ function mousePressed() {
 function draw() {
     
     background(bg);
-    
+    textFont(font);
     fill(WORD_COLOR);
     for (let word of visibleWords) {
         const visibleText = word === currentWord ? word.text.slice(currentIndex): word.text;
@@ -66,7 +66,7 @@ function keyTyped() {
         isTimerRunning = true;
         startTime = new Date();
       }
-      
+    //   console.log();
     checkLetter(key);
 
 }
