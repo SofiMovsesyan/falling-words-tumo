@@ -32,7 +32,6 @@ function mousePressed() {
 }
 
 function draw() {
-    
     background(bg);
     textFont(font);
     fill(WORD_COLOR);
