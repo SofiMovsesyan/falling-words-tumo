@@ -143,7 +143,7 @@ function finish() {
     isTimerRunning = false;
     clearTimeout(timeoutId);
     noLoop();
-    // backgroundMusic.stop();
+    backgroundMusic.stop();
 
 }
 function win() {
