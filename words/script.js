@@ -20,7 +20,7 @@ function setup() {
     startTime = new Date();
 
     textSize(LETTER_SIZE)
-    backgroundMusic = loadSound("./assets/sounds/MUSIC.mp3")
+    backgroundMusic = loadSound("./assets/sounds/music.mp3")
     play();
 }
 
